@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leandro Roig">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="imagenes/UTN_logo.png">
+    <title>Inscripción curso Desarrollo Web</title>
+</head>
+<body>
+    
+    <header id="encabezado de la página";>
+        <img src="imagenes/ATICMA_logo.png" style="height: 80px;">
+        <img src="imagenes/UTN_logo.png" style="height: 80px;">
+        <img src="imagenes/MGP-Modernizacion_logo.png" style="height: 100px;width: 140px;">        
+    </header>
+    <hr>
+    
+<div id="formulario inscripción">
+    <h1><u>Inscripción al curso de Desarrollo Web Full Stack</u></h1>
+    <h3><u>Formulario y cuestionario de carácter obligatorio</u></h3>
+    <section>
+        <form>
+            <img src="imagenes/tildeverdechecklist.png"  style="height: 20px;">
+            <label for="fnombre">Nombre completo:</label>
+            <input type="text" id="fnombre" name="fnombre" required>
+            <br><br>
+
+            <img src="imagenes/fechanacimiento_logo.jpg"  style="height: 20px;">
+            <label for="Fecha de Nacimiento">Fecha de nacimiento:&nbsp;&nbsp;</label>            
+            <input type="date" id="Fecha de Nacimiento" name="Fecha de Nacimiento" max="2006-01-01" required>
+            <br><br>
+
+            <img src="imagenes/genero_logo.png" style="height: 20px;">
+            <label for="Género" name="Género">Género:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <select id="Género" name="" required>
+                <option>Seleccionar</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Masculino">Masculino</option>
+                <option value="No binario">No binario</option>
+            </optgroup>
+            </select>
+            <br><br>   
+
+            <img src="imagenes/casa_logo.png"  style="height: 20px;">
+            <label for="fdireccion">Dirección:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="fdireccion" name="fdireccion" required> 
+            <br><br>
+
+            <img src="imagenes/telefono_logo.png"  style="height: 20px;">
+            <label for="ftelefono">Teléfono:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>            
+            <input type="tel" id="ftelefono" name="telefono" required> 
+            <br><br>
+
+            <img src="imagenes/mundoverde.png"  style="height: 20px;">
+            <label for="fnacionalidad">Nacionalidad:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="fnacionalidad" name="nacionalidad" required> 
+            <br><br>
+
+            <img src="imagenes/correoelectronico_logo.png"  style="height: 20px;">
+            <label for="femail">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="email" id="femail" name="email" required> 
+            <br><br><br>        
+            <button type="reset">Resetear</button>
+        <br>
+        <br>
+            <ul>
+               <li><h4> ¿Ha participado en algún curso relacionado con Diseño Web y/o Programación?</h4>
+            <input type="radio" id="Respuesta1" name="Respuesta 1">
+            <label for="Respuesta1">Si</label>
+            <input type="radio" id="Respuesta2" name="Respuesta 1" checked>
+            <label for="Respuesta2">No</label>
+                
+            <h4>Si respondió afirmativamente, detalle a continuación:</h4>
+            <textarea name="Detalle experiencia académica" rows="4" cols="60"></textarea>
+               </li>
+
+            <br>
+
+               <li><h4> ¿Ha trabajado o trabaja actualmente en alguna empresa relacionada con la tecnología?</h4>
+            <input type="radio" id="Respuesta3" name="Respuesta 2" value="Sí">
+            <label for="Respuesta3">Si</label>
+            <input type="radio" id="Respuesta4" name="Respuesta 2" value="No" checked>
+            <label for="Respuesta4">No</label>
+            <h4>Si respondió afirmativamente, detalle el nombre de la empresa y qué tareas desarrolla/ba</h4>
+            <textarea name="Experiencia laboral" rows="4" cols="60"></textarea>
+
+                <li><h4>Por favor indique si cumple con los siguientes requisitos:</h4>
+                    <input type="checkbox" id="Requisitos PC" name="Requisito 1">
+                    <label for="Requisitos PC">PC que cumpla con los requisitos mínimos</label>
+                    <br>
+                    <input type="checkbox" id="Secundario completo" name="Requisito 2">
+                    <label for="Secundario completo" name="">Secundario completo</label>
+                    <br>
+                    <input type="checkbox" id="Sin vacante en UTN" name="Requisito 2">
+                    <label for="Sin vacante en UTN" name="">No haber conseguido vacante en alguna carrera de Desarrollo/Programación </label>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <button type="reset">Resetear</button>
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+        <br>
+    </section>
+</div>
+    
+    
+    
+    
+    <footer></footer>
+</body>
+</html>
