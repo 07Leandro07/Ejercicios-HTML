@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.principal{
+    display:grid ;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 50%;
+    height: 100vh;
+}
+
+.principal .item-main{
+    background-color: aqua;
+    border: 2px solid orange;
+    grid-row: 1 / span 2;
+}
+
+.principal .item-aside{
+    background-color: red;
+    border: 2px solid orange;
+}
+
+.principal .item-footer{
+    background-color: black;
+    border: 2px solid orange;
+    color: white;
+}
