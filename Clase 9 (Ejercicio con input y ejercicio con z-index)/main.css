@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.principal{ 
+    position:relative;
+    width: 100% auto;
+    height: 100vh;
+    background-color: orange;
+}
+
+.principal .cuadrado-1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    z-index: 3;
+    margin-top: 300px;
+    margin-left: 880px;
+}
+
+.principal .cuadrado-2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 2;
+    margin-top: 300px;
+    margin-left: 900px;
+}
+
+.principal .cuadrado-3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    z-index: 1;
+    margin-top: 300px;
+    margin-left: 920px;
+}
