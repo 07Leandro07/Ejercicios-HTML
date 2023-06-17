@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Formulario Bancario</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="principal">
+        <div class="sub-principal">
+            <form class="formulario">
+                <div><h4><u>Consultas Bancarias</u></h4></div>
+                <label for="Pregunta1"><b>¿Qué tipo de operación desea realizar?</b></label>
+                <br>
+                <br>
+                <input type="radio" id="Pregunta1" name="Pregunta1" required>Transferencia a cuenta propia
+                <br>
+                <input type="radio" id="Pregunta1" name="Pregunta1"required>Transferencia a cuenta de terceros
+                <br>
+                <br>
+                <label for="Pregunta2"><b>¿Qué cuenta desea utilizar?</b></label>
+                <br>
+                <br>
+                <input type="radio" id="Pregunta2" name="Pregunta2">Caja de ahorro en pesos ($)
+                <br>
+                <input type="radio" id="Pregunta2" name="Pregunta2">Caja de ahorro en dólares (u$s)
+                <br>
+                <br>
+                <label for="Pregunta3"><b>Por favor introduzca el CBU de la cuenta destino:</b></label>
+                <br>
+                <input type="text" id="Pregunta 3" placeholder="Introducir CBU cuenta destino" required class="rellenar">
+                <br>
+                <br>
+                <label for="Pregunta4"><b>Introduzca el correo del destinatario para darle aviso:</b></label>
+                <br>
+                <input type="email" for="Pregunta4" placeholder="Introducir correo del destinatario" required class="rellenar">
+                <br>
+                <br>
+                <label for="Pregunta5"><b>Telefono del destinatario</b></label>
+                <br>
+                <input type="tel" id="Pregunta5" placeholder="Introducir nro de telefono" required class="rellenar">
+                <br>
+                <br>
+                <label for="Pregunta6"><b>Introduzca aqui un mensaje para el destinatario</b></label>
+                <br>
+                <textarea name="Pregunta6" id="Pregunta6" cols="30" rows="10" class="rellenar10"></textarea>
+                <br>
+                <button type="submit">Transferir</button>
+                <button type="reset">Resetear</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

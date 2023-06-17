@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.principal{    
+    display: flex;
+    position: relative;
+    background-color: darkcyan;
+    border-radius: 10px;
+    width: 1000px;
+    height: 100vh;
+}
+
+.principal .sub-principal{
+    position: absolute;
+    bottom: 150px;   
+    left: 200px;    
+    width: 50%;
+    height: 70vh;
+    background-color:cornflowerblue;
+    border-radius: 10px;
+}
+
+.formulario{
+    padding-left: 20px;
+}
+
+.formulario .rellenar{
+    width: 90%;
+    border: 10px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.formulario .rellenar:focus{
+    border-radius: 10px;
+    border:2px solid black;
+
+}
+
+.formulario .rellenar10{
+    resize: none;
+    width: 90%;
+    height: 70px;
+    margin-top: 10px;
+}
+
+.formulario button{
+    width: 45%;
+    border-radius: 10px;
+    height: 40px;
+    background-color: gray;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.formulario .button:hover{
+    background-color: greenyellow;
+}
+
+.formulario ::placeholder{
+    padding-left: 10px;
+}
+
+
