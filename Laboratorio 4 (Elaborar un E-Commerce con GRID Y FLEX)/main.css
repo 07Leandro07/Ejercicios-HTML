@@ -1,0 +1,289 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor-principal{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100vh;
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+/*HEADER*/
+.contenedor-principal .header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 15vh;    
+    border-bottom: 2px solid black;
+}
+
+.contenedor-principal .header-1{
+    background-color: black;
+    position: absolute;
+    width: 150px;
+    height: 15vh;    
+    left:0;
+    border-bottom: 2px solid black;
+}
+
+.contenedor-principal .imagen1{
+    height: 15vh;
+    width: 150px;
+}
+
+.contenedor-principal .header-2{
+    position: absolute;    
+    width: 92.5%;
+    height: 15vh;
+    background-color: white;
+    right: 0;
+    font-size: 25px;
+    border-bottom: 2px solid black;
+}
+
+.contenedor-principal .header-2 ul{
+    display: flex;
+    margin-left: 200px;
+}
+
+.contenedor-principal .header-2 ul li{
+    list-style: none;
+    display: flex;
+}
+
+.contenedor-principal .header-2 ul li a{
+    text-decoration: none;
+    padding: 20px;
+    margin-top: 50px;
+    margin-right: 20px;
+    text-align: center;
+    color: black;
+}
+
+.contenedor-principal .header-2 ul li a:hover{
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+
+
+/*BODY*/
+.contenedor-principal .sub-principal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;    
+    background-color: rgb(214, 203, 203);
+}
+
+
+/*MAIN*/
+.contenedor-principal .main{
+    display: grid;
+    background-color: rgb(214, 203, 203);
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 23vh 23vh 23vh;
+    width: 60%;    
+    gap: 10px;
+    padding: 50px;
+
+}
+
+.contenedor-principal .main .item{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background-color: white;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+   
+}
+
+.contenedor-principal .main .item-5{
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    background-color: white;    
+    height: 23vh;
+    padding: 2px;
+    grid-area: 3 / 1 / 3 / span 2;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+
+.contenedor-principal .main .imagen-river{
+    max-width: 90%;
+    max-height: 70%;
+    margin-top: 20px;
+}
+.contenedor-principal .main .imagen-item5{
+    width: 50%;        
+    margin-top: 20px;   
+}
+
+.contenedor-principal .main .description{
+    margin-top: 20px;
+}
+
+.contenedor-principal .main .precio{
+    margin-top: 10px;
+    font-size: 18px !important;
+    
+}
+
+.contenedor-principal .main .item button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.contenedor-principal .main .item-5 button{
+    margin-top: 10px;    
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.contenedor-principal .main .item button:hover{
+    background-color: gray;
+    color: white;
+}
+
+.contenedor-principal .main .item-5 button:hover{
+    background-color: gray;
+    color: white;
+}
+
+
+
+
+
+
+
+/*ASIDE*/
+.contenedor-principal .aside{
+    display: grid;
+    width: 40%;    
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 17vh 17vh 17vh 17vh;     
+    background-color: rgb(214, 203, 203);
+    gap: 10px;    
+    border-left: 4px solid black;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.contenedor-principal .aside .item-aside{
+    background-color:rgb(214, 203, 203);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.contenedor-principal .imagen-aside{
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+    height: 0%;
+    width: 0%;
+    filter: opacity(50%);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.contenedor-principal .imagen-aside:hover{
+    filter: opacity(100%);
+
+}
+
+
+
+
+/*FOOTER 1 y FOOTER 2*/
+.contenedor-principal .footer{
+    display: flex;
+    position: relative;
+    background-color: red;
+    width: 100%;
+    height: 10vh;
+    border-top: 2px solid black;
+}
+
+/*FOOTER-1*/
+.contenedor-principal .footer-1{
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    height: 10vh;
+    padding-left: 10px;
+}
+
+.footer-1 .input-1{
+    width: 300px;
+    height: 20px;
+    height: 30px;
+    position: relative;
+}
+.footer-1 .boton-1{
+    position: relative;
+    width: 300px;
+    margin-top: 10px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.fa-sharp{
+    position: absolute;
+    right: 80px;
+    margin-top: 2px;
+}
+
+
+
+/*FOOTER-2*/
+.contenedor-principal .f2{
+    position: absolute;
+    right: 0;
+    background-color: white;
+    width: 50%;
+    height: 10vh;
+    text-align: right;
+    padding-right: 200px;
+}
+
+.fa-brands{
+    text-align: right;
+    font-size: 30px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.f2 h4{
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+
+
