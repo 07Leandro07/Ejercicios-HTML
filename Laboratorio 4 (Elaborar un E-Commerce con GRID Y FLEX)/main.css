@@ -1,205 +1,195 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .contenedor-principal{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    height: 100vh;
-    background-color: blue;
+    width: 100%;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
-    
+    margin: auto;
+
 }
 
 
 
 /*HEADER*/
-.contenedor-principal .header{
+.header{
+    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    position: relative;
-    background-color: black;
-    width: 100%;
-    height: 15vh;    
-    border-bottom: 2px solid black;
-}
-
-.contenedor-principal .header-1{
-    background-color: black;
-    position: absolute;
-    width: 150px;
-    height: 15vh;    
-    left:0;
-    border-bottom: 2px solid black;
-}
-
-.contenedor-principal .imagen1{
-    height: 15vh;
-    width: 150px;
-}
-
-.contenedor-principal .header-2{
-    position: absolute;    
-    width: 92.5%;
-    height: 15vh;
+    width: 90%;
+    height: 16vh;
     background-color: white;
-    right: 0;
-    font-size: 25px;
-    border-bottom: 2px solid black;
+    margin: auto;
+    overflow: hidden;
+    border-bottom: 2px solid black;    
 }
 
-.contenedor-principal .header-2 ul{
-    display: flex;
-    margin-left: 200px;
+
+.header .imagen-1{
+    width: 10%;
+    height: auto;   
 }
 
-.contenedor-principal .header-2 ul li{
+.nav-1{
+    align-self: stretch;
+    justify-content: flex-end;
+}
+
+.lista{
+    display: flex;     
+}
+
+.header ul li{
     list-style: none;
-    display: flex;
+    margin-top: 70px;
 }
 
-.contenedor-principal .header-2 ul li a{
+.header ul li a{
     text-decoration: none;
-    padding: 20px;
-    margin-top: 50px;
-    margin-right: 20px;
-    text-align: center;
     color: black;
+    margin: auto;
+    padding: 30px;
+    font-size: 30px;
 }
 
-.contenedor-principal .header-2 ul li a:hover{
-    text-decoration: none;
+.header ul li a:hover{
     background-color: gray;
     color: white;
     border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+.contenedor{
+    box-sizing: border-box;
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+
+
+
+.main-1{
+    box-sizing: border-box;
+    float: left;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 24vh 24h 24vh;
+    width: 70%;
+    height: 80vh;
+    background-color: rgb(214, 203, 203);
+    margin: auto;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
     
 }
 
-
-
-
-
-
-
-/*BODY*/
-.contenedor-principal .sub-principal{
-    display: flex;
-    flex-direction: row;
-    width: 100%;    
-    background-color: rgb(214, 203, 203);
-}
-
-
-/*MAIN*/
-.contenedor-principal .main{
+.main-1 .item{
     display: grid;
-    background-color: rgb(214, 203, 203);
-    grid-template-columns: 47% 47%;
-    grid-template-rows: 23vh 23vh 23vh;
-    width: 60%;    
-    gap: 10px;
-    padding: 50px;
-
-}
-
-.contenedor-principal .main .item{
-    display: grid;
-    grid-template-columns: 45% 55%;
-    background-color: white;
-    padding: 4px;
+    grid-template-columns: 40% 60%;
+    position: relative; 
     border: 2px solid black;
+    box-sizing: border-box;
     border-radius: 10px;
-    margin-top: 10px;
-   
+    background-color: white;
+    overflow: hidden;
 }
 
-.contenedor-principal .main .item-5{
+.main-1 .item-5{
     display: grid;
     grid-template-columns: 30% 30% 40%;
-    background-color: white;    
-    height: 23vh;
-    padding: 2px;
-    grid-area: 3 / 1 / 3 / span 2;
     border: 2px solid black;
+    box-sizing: border-box;
     border-radius: 10px;
-    font-size: 15px;
-    
+    background-color: white;
+    grid-area: 3 / 1 / 3 / span 2;
+    overflow: hidden;
 }
 
-.contenedor-principal .main .imagen-river{
-    max-width: 90%;
-    max-height: 70%;
-    margin-top: 20px;
-}
-.contenedor-principal .main .imagen-item5{
-    width: 50%;        
-    margin-top: 20px;   
-}
 
-.contenedor-principal .main .description{
-    margin-top: 20px;
-}
-
-.contenedor-principal .main .precio{
-    margin-top: 10px;
-    font-size: 18px !important;
-    
-}
-
-.contenedor-principal .main .item button{
-    margin-top: 10px;
+.main-1 .imagen-river{
     width: 100%;
-    height: 40px;
-    border-radius: 10px;
-    padding: 5px;
+    max-width: 100%;
+    height: auto;
     cursor: pointer;
 }
 
-.contenedor-principal .main .item-5 button{
-    margin-top: 10px;    
-    width: 100%;
-    height: 40px;
+.main-1 .imagen-item5{
+    width: 70%;
     border-radius: 10px;
-    padding: 5px;
+    max-width: 100%;
+    height: auto;
     cursor: pointer;
 }
 
-.contenedor-principal .main .item button:hover{
-    background-color: gray;
-    color: white;
+.precio{
+    color: green;
 }
 
-.contenedor-principal .main .item-5 button:hover{
-    background-color: gray;
-    color: white;
+.botones{
+    margin-top: 40px;
 }
 
+.item .description{    
+    text-align: center;
+    margin-top: 16px;
+}
 
+.description button{
+    width: 200px;
+    height: 4vh;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #009946;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 4px;
+}
 
+.description .button-5{
+    width: 260px;
+    height: 4vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.description button:hover{
+    color: green;
+    opacity: 80%;
+}
 
 
 
 
 /*ASIDE*/
-.contenedor-principal .aside{
+.aside{
+    float: right;
     display: grid;
-    width: 40%;    
+    width: 30%;
+    height: 80vh;
     grid-template-columns: 30% 30%;
     grid-template-rows: 17vh 17vh 17vh 17vh;     
     background-color: rgb(214, 203, 203);
-    gap: 10px;    
-    border-left: 4px solid black;
-    justify-content: center;
-    padding-top: 70px;
-}
-
-.contenedor-principal .aside .item-aside{
-    background-color:rgb(214, 203, 203);
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 10px;
+    gap: 10px;
+    justify-content: left;    
+    padding-top: 40px;
+    box-sizing: border-box;
 }
 
 .contenedor-principal .imagen-aside{
@@ -207,83 +197,169 @@
     min-height: 100%;
     min-width: 100%;
     height: 0%;
-    width: 0%;
-    filter: opacity(50%);
+    width: 0%;    
     cursor: pointer;
     border-radius: 10px;
 }
 
 .contenedor-principal .imagen-aside:hover{
-    filter: opacity(100%);
-
+    filter: opacity(50%);
 }
 
 
 
 
-/*FOOTER 1 y FOOTER 2*/
-.contenedor-principal .footer{
-    display: flex;
-    position: relative;
-    background-color: red;
-    width: 100%;
-    height: 10vh;
+/*FOOTER*/
+.footer{
+    box-sizing: border-box;
+    display: grid;    
+    grid-template-columns: 50% 50%;    
+    width: 90%;
+    height: 14vh;
+    background-color: white;
     border-top: 2px solid black;
+    margin: auto;
+    overflow: hidden;
 }
 
-/*FOOTER-1*/
-.contenedor-principal .footer-1{
-    position: absolute;
-    background-color: white;
-    width: 50%;
-    height: 10vh;
-    padding-left: 10px;
+.suscripcion{
+    width: 100%;
+    display: flex;    
+    flex-direction: column;    
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
-.footer-1 .input-1{
-    width: 300px;
-    height: 20px;
-    height: 30px;
-    position: relative;
-}
-.footer-1 .boton-1{
-    position: relative;
-    width: 300px;
-    margin-top: 10px;
-    height: 30px;
+.suscripcion input{  
+    width: 240px;
+    height: 3vh;    
+    border-radius: 10px;   
     margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 30px;
+    border: 1px solid black;
 }
 
-.fa-sharp{
-    position: absolute;
-    right: 80px;
-    margin-top: 2px;
+.fa-envelope{    
+    left: 26px;
+    top: 70px;
+    z-index: 1;
+    
 }
 
-
-
-/*FOOTER-2*/
-.contenedor-principal .f2{
-    position: absolute;
-    right: 0;
-    background-color: white;
-    width: 50%;
-    height: 10vh;
-    text-align: right;
-    padding-right: 200px;
+.suscripcion button{
+    width: 240px;
+    height: 3vh;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;   
 }
 
-.fa-brands{
-    text-align: right;
-    font-size: 30px;
-    margin: 20px;
+.redes{
+    padding-top: 10px;    
+}
+
+.redes h4{
+    padding-left: 200px;
+}
+
+.redes ul{
+    display: flex;
+    padding-left: 150px;
+}
+
+.redes ul li{
+    display: flex;
+    list-style: none;
+    padding: 10px;    
+}
+
+.redes ul li a{    
     text-decoration: none;
-}
-
-.f2 h4{
-    padding-right: 50px;
-    padding-top: 20px;
+    color:black;
 }
 
 
+@media (max-width:720px){
+    
+    .main-1{
+        width: 100%;
+        height: 160vh;
+        display: flex;
+        flex-direction: column;
+        padding-left: 1.5%;
+        padding-right: 1.5%;        
+    }
 
+    .main-1 .item-5 .imagen-item5{
+        width: 100%;
+        height: auto;
+    }
+
+    .main-1 .item-5 .description{
+        padding-top: 10px;        
+    }
+
+    .description{
+        padding-bottom: 10px;
+        padding-right: 10px;        
+    }
+
+    .precio{
+        margin-top: 10px;
+        font-size: 18.6px;
+    }
+
+    .description button{
+        width: 160px;
+    }
+
+    .description .button-5{
+        width: 160px;        
+    }
+
+    .aside{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header{
+        width: 90%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .header .imagen-1{
+        position: absolute;
+        width: 30%;
+        height: 20vh;       
+        align-self: center;
+    }
+
+    .nav-1{
+        padding-top: 140px;
+    }
+ 
+    .header ul li a{               
+        font-size: 24px;        
+    }
+
+    .footer{
+        margin-top: 1400px;
+        height: 24vh;
+    }
+
+    .redes ul{
+        display: grid;      
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        margin-top: 20px;
+        padding-left: 2px;
+    }
+
+    
+    .redes h4{
+        padding-left: 20px;
+    }
+}
