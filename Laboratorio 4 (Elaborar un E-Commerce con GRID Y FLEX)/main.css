@@ -38,23 +38,26 @@
 .nav-1{
     align-self: stretch;
     justify-content: flex-end;
+    
 }
 
 .lista{
-    display: flex;     
+    display: flex;
+    padding-left: 200px;
+    
 }
 
 .header ul li{
     list-style: none;
-    margin-top: 70px;
+    margin-top: 70px;    
 }
 
 .header ul li a{
     text-decoration: none;
     color: black;
     margin: auto;
-    padding: 30px;
-    font-size: 30px;
+    padding: 20px;
+    font-size: 26px;
 }
 
 .header ul li a:hover{
@@ -337,12 +340,20 @@
         align-self: center;
     }
 
+    .lista{
+        display: flex;
+        margin-right: 200px;        
+        justify-content: center;               
+    }
+
     .nav-1{
         padding-top: 140px;
+        justify-content: end;
     }
  
     .header ul li a{               
-        font-size: 24px;        
+        font-size: 24px;
+        
     }
 
     .footer{
