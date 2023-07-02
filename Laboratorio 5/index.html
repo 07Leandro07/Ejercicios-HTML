@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid container-principal"> <!--para que abarque el 100% de la pantalla -->
+
+        <header class="header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-header">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./imagenes/logo-lacoste.jpg" alt="Logo" width="60" height="30"
+                            class="d-inline-block align-text-center clearfix">
+                        Lacoste
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbar-1 bg-body-tertiary" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown navbar-1">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    PRODUCTOS
+                                </a>
+                                <ul class="dropdown-menu bg-body-tertiary">
+                                    <li><a class="dropdown-item" href="#">Remeras</a></li>
+                                    <li><a class="dropdown-item" href="#">Buzos & Camperas</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown navbar-1">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    PRODUCTOS PARA
+                                </a>
+                                <ul class="dropdown-menu bg-body-tertiary">
+                                    <li><a class="dropdown-item" href="#">Hombre</a></li>
+                                    <li><a class="dropdown-item" href="#">Mujer</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Ninos</a></li>
+                                </ul>
+                            <li class="nav-item dropdown navbar-1">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    COLECCIONES
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Coleccion 2023</a></li>
+                                    <li><a class="dropdown-item" href="#">Coleccion 2022</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Colecciones anteriores</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item navbar-1">
+                                <a class="nav-link active" aria-current="page" href="#">SOBRE NOSOTROS</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <button type="button" class="btn btn-secondary">CARRITO / $0</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+
+        <main class="container-fluid">
+            <div class="container-fluid">
+                <div class="row row-1">
+                    <div class="col-md-6 carousel-imagenes">
+                        <div id="carouselExampleCaptions" class="carousel slide carousel-css propiedades"
+                            data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="1000">
+                                    <img src="./imagenes/remera-lacoste-1.webp" class="d-block w-75 imagenes-1" alt="">
+                                    <div class="carousel-caption d-none d-md-block"></div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000">
+                                    <img src="./imagenes/remera-lacoste-2.avif" class="d-block w-75 imagenes-1" alt="">
+                                    <div class="carousel-caption d-none d-md-block"></div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000">
+                                    <img src="./imagenes/remera-lacoste-3.avif" class="d-block w-75 imagenes-1" alt="">
+                                    <div class="carousel-caption d-none d-md-block"></div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-md-6  imagenes-6">
+                        <div class="container-fluid main-1">
+                            <div class="row main-1-1">
+                                <div class="col-md-4 remeras">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./imagenes/remera-lacoste-4.avif" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 remeras">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./imagenes/remera-lacoste-5.avif" class="card-img-top" alt="...">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 remeras">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./imagenes/remera-lacoste-6.avif" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 remeras">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./imagenes/remera-lacoste-7.avif" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 remeras">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./imagenes/remera-lacoste-8.avif" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 remeras">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./imagenes/remera-lacoste-9.avif" class="card-img-top" alt="...">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row row-2">
+                    <div class="col-md-4">
+                        <div class="card card-1" style="width: 18rem;">
+                            <img src="./imagenes/imagen-eco-friendly.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5>MEDIO AMBIENTE</h5>
+                                <p class="card-text">Porque promovemos de manera seria el combate contra el cambio
+                                    climatico, por cada prenda que compres, recuperaremos 1m2 de bosque en tu pais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-1" style="width: 18rem;">
+                            <img src="./imagenes/imagen-medios-de-pago.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5>FORMAS DE PAGO</h5>
+                                <p class="card-text">Contamos con todos los medios de pago: tarjeta de
+                                     credito/debito,
+                                    MercadoPago, Transferencia Bancaria. Consulta por otras opciones de pago.</p>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-1" style="width: 18rem;">
+                            <img src="./imagenes/materia-prima.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5>MATERIA PRIMA</h5>
+                                <p class="card-text">Lacoste ha sido galardonada y reconocida en distintos eventos
+                                    por
+                                    ser la empresa de productos textiles con mejor materia prima del mundo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <br>
+                <br>
+
+                <div class="separacion-1">
+                    <hr class="hr-1">
+                    <h5 class="texto-h5">REVISA NUESTROS ULTIMOS PRODUCTOS</h5>
+                </div>
+
+
+
+
+
+                <div class="row row-3">
+                    <div class="col-md-2">
+                        <div class="card card-2" style="width: 18rem;">
+                            <img src="./imagenes/buzo-lacoste-1.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5>Campera Lacoste $45.000</h5>
+                                <p class="card-text">Campera Lacoste (Azul).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card card-2" style="width: 18rem;">
+                            <img src="./imagenes/buzo-lacoste-2.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5>Buzo Lacoste $40.000</h5>
+                                <p class="card-text">Buzo Lacoste (Negro).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card card-2" style="width: 18rem;">
+                            <img src="./imagenes/buzo-lacoste-3.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5>Buzo Lacoste $50.000</h5>
+                                <p class="card-text">Buzo Lacoste (Azul con estampas).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card card-2" style="width: 18rem;">
+                            <img src="./imagenes/buzo-lacoste-4.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5>Buzo Lacoste $55.000</h5>
+                                <p class="card-text">Buzo Lacoste (Verde con estampa).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card card-2" style="width: 18rem;">
+                            <img src="./imagenes/buzo-lacoste-5.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5>Polera Lacoste $60.000</h5>
+                                <p class="card-text">Polera invierno (Gris).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="separacion-2">
+                    <hr class="hr-2">
+                    <h5 class="texto-h6">SEGUINOS EN INSTAGRAM</h5>
+                </div>
+
+                <div class="row row-4">
+                    <div class="col-md-6">
+                        <div>
+                            <div class="card-3" style="width: 18rem;">
+                                <img src="./imagenes/logo-lacoste-grande.png" class="card-img-top" alt="...">
+                                <div class="card-body card-body-1">
+                                  <h5 class="card-title">@lacoste-argentina</h5>
+                                  <a href="#" class="btn btn-primary">SEGUIR</a>
+                                  <p class="card-text">LACOSTE-ARGENTINA <br> Tienda de Ropa  <br> Estudiante de Programacion MDP-PROGRAMA</p>                                 
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-md-6">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4 remeras1">
+                                    <div class="card-1" style="width: 18rem;">
+                                        <img src="./imagenes/remera-lacoste-4.avif" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 remeras1">
+                                    <div class="card-1" style="width: 18rem;">
+                                        <img src="./imagenes/remera-lacoste-5.avif" class="card-img-top" alt="...">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 remeras1">
+                                    <div class="card-1" style="width: 18rem;">
+                                        <img src="./imagenes/remera-lacoste-6.avif" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 remeras1">
+                                    <div class="card-1" style="width: 18rem;">
+                                        <img src="./imagenes/remera-lacoste-7.avif" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 remeras1">
+                                    <div class="card-1" style="width: 18rem;">
+                                        <img src="./imagenes/remera-lacoste-8.avif" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 remeras1">
+                                    <div class="card-1" style="width: 18rem;">
+                                        <img src="./imagenes/remera-lacoste-9.avif" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+                
+                <footer class="container-fluid footer-1">
+                    <div class="container-fluid">
+                        <div class="row row-5">
+                            <div class="col-md-4">IMAGEN 1</div>
+                            <div class="col-md-4">IMAGEN 2</div>
+                            <div class="col-md-4">IMAGEN 3</div>               
+                        </div>
+    
+    
+                        <div class="row row-6">
+                            <div class="col-md-12 tienda-entrega-condiciones">SOBRE LA TIENDA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FORMAS DE ENTREGA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TERMINOS Y CONDICIONES</div>            
+                        </div>
+
+                        <div class="row row-7">
+                            <div class="col-md-12"><b>Lacoste-AR  Todos los derechos reservados.</b></div>              
+                        </div>
+                    </div>
+                 
+                </footer>
+            </div>
+        </main>
+
+
+    
+
+
+
+        </footer>
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
